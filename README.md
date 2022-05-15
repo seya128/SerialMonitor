@@ -1,0 +1,2 @@
+# SerialMonitor
+PySimpleGUIを使ったシリアルモニター
