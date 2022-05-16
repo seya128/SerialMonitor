@@ -82,7 +82,7 @@ layout = [
      sg.Checkbox('AutoScroll', default = True, key='-AutoScroll-'), 
      sg.Checkbox('Timestamp', default = False, key='-Timestamp-'),
      sg.Stretch(),
-     sg.Combo(values=('none','LF','CR','CR+LF'), default_value='LF', readonly=True, key='-newline-'),
+     sg.Combo(values=list(DICT_NEWLINE.keys()), default_value='LF', readonly=True, key='-newline-'),
      sg.Combo(values=com_list, default_value=com_list[0], enable_events=True, readonly=True, key='-port-'),
      sg.Combo(values=LIST_BAUDRATE, default_value='115200 bps',  enable_events=True, readonly=True, key='-baudrate-'),
      sg.Button('Clear', key='-CLEAR-')
